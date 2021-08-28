@@ -3,6 +3,7 @@ package file;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.util.Scanner;
 
 //파일 입출력
 public class Ex01 {
@@ -21,7 +22,16 @@ public class Ex01 {
 		String name = "반갑다";  //한글도 가능
 		
 		fos.write(name.getBytes()); //그냥 String을 쓰면 오류가 나기 때문에(바이트형태만 받기 때문에) .getBytes로 변환해서 실행한다
-		
+		/*
+		Scanner input = new Scanner(System.in);
+		name = input.next();
+		String age = input.next();
+		String addr = input.next();
+		name+="\n";
+		fos.write(name.getBytes());
+		fos.write(age.getBytes());
+		fos.write(addr.getBytes());
+		*/
 	}
 
 }
