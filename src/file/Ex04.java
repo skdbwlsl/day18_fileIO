@@ -20,7 +20,7 @@ public class Ex04 {
 		String str = "Test";
 		StringBuffer sb = new StringBuffer();
 		sb.append("abcd");
-		
+		str += "aaa";
 		System.out.println(str);
 		System.out.println(sb);
 		
